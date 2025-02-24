@@ -80,7 +80,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden px-4 py-3 bg-blue-700 shadow-lg flex flex-col space-y-2">
+        <nav className="md:hidden px-4 py-3 bg-red-700 shadow-lg flex flex-col space-y-2">
           <NavLink 
             to="/" 
             className={({ isActive }) => 
