@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 // Import your logo image at the top
-import logoImage from "../assets/logo.jpg"; // Adjust the path based on your project structure
+import logoImage from "../assets/logo3.jpeg"; // Adjust the path based on your project structure
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
               to="/"
               className="text-white font-bold text-2xl tracking-tight hover:text-gray-200 transition duration-200"
             >
-              <img src={logoImage} alt="Your Logo" className="h-16 w-aut0" />
+              <img src={logoImage} alt="Your Logo" className="h-13 w-50" />
             </Link>
           </div>
 
