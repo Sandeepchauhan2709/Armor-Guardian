@@ -64,7 +64,7 @@ function Home() {
   }, [charIndex, isDeleting, fullText]);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-100 text-white">
       {/* Hero Section with Background Image */}
       <section className="relative h-screen w-full px-4 md:px-8">
         {/* Background image with optional grid overlay */}
@@ -112,13 +112,13 @@ function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/services"
-                className="bg-blue-600 text-white font-medium py-4 px-8 rounded-lg hover:bg-blue-700 transition duration-300 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:-translate-y-1 transform"
+                className="bg-black text-white font-medium py-4 px-8 rounded-lg  transition duration-300 shadow-lg hover:-translate-y-1 transform"
               >
                 Our Services
               </Link>
               <Link
                 to="/contact"
-                className="bg-gray-800/80 backdrop-blur-sm text-gray-200 font-medium py-4 px-8 rounded-lg hover:bg-gray-700 border border-gray-700 transition duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 transform"
+                className="bg-black backdrop-blur-sm text-gray-400 font-medium py-4 px-8 rounded-lg hover:bg-gray-700 border border-gray-700 transition duration-300 shadow-md hover:shadow-lg hover:-translate-y-1 transform"
               >
                 Contact Us
               </Link>
@@ -128,7 +128,7 @@ function Home() {
       </section>
 
       {/* Feature Cards Section - Updated to match your image with hover effects */}
-      <section className="py-16 px-4 md:px-8 max-w-6xl mx-auto bg-gray-900">
+      <section className="py-16 px-4 md:px-8 max-w-6xl mx-auto bg-gray-100">
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
