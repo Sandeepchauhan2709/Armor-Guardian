@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import cyberBg from "../assets/cyber-background.jpg";
+import cyberBg from "../assets/hero.jpg";
 import logoImage from "../assets/cyber-background2.jpg"; // adjust path if needed
 import bgimg from "../assets/bgimg3.jpg";
 
@@ -89,8 +89,8 @@ function Home() {
               Advanced Cybersecurity Solutions
             </span>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              Securing Your{" "}
-              <span className="text-blue-800 relative inline-block">
+              Hackers Never Rest
+              {/* <span className="text-blue-800 relative inline-block">
                 {displayText}
                 <span
                   className={`${
@@ -100,11 +100,11 @@ function Home() {
                   |
                 </span>
                 <span className="absolute bottom-0 left-0 w-full h-2 bg-blue-700/30 -z-10 transform -rotate-1"></span>
-              </span>
+              </span> */}
               <br />
-              One Byte at a Time
+               Neither Do We
             </h1>
-            <p className="text-lg text-gray-300 mb-8 leading-relaxed backdrop-blur-sm bg-black/20 p-4 rounded-lg">
+            <p className="text-lg text-white mb-8 leading-relaxed backdrop-blur-sm bg-black/20 p-4 rounded-lg">
               Armor-Guardian delivers innovative cybersecurity solutions that
               protect your business. Our expertise helps you stay ahead of
               evolving digital threats.
@@ -134,28 +134,34 @@ function Home() {
             {
               title: "Threat Protection",
               description:
-                "Advanced systems to detect and neutralize cyber threats before they impact your business.",
+               `Stay One Step Ahead – Detect and Neutralize Threats Before They Strike.
+                Proactive Defense, Unmatched Security.
+                Eliminating Cyber Threats Before They Disrupt Your Business.`,
               icon: <Shield className="w-10 h-10 text-blue-400" />,
             },
             {
               title: "24/7 Monitoring",
               description:
-                "Continuous surveillance and real-time alerts to protect your systems around the clock.",
+                `Around-the-Clock Protection – Because Cyber Threats Never Sleep.
+                 Real-Time Threat Detection, 24/7 Peace of Mind.         
+                 We Watch, So You Don’t Have To.`,
               icon: <ShieldCheck className="w-10 h-10 text-blue-400" />,
             },
             {
               title: "Network & Data Protection",
               description:
-                "Multi-layered security approach to safeguard your valuable data and business networks.",
+                `Fortifying Your Digital Perimeter – Secure, Resilient, Unbreakable.
+                 Multi-Layered Security for Ultimate Data Protection.
+                 Your Data, Our Priority – Because Every Bit Matters.`,
               icon: <Fingerprint className="w-10 h-10 text-blue-400" />,
             },
           ].map((feature, index) => (
             <div
               key={index}
-              className="bg-gray-800/80 p-8 rounded-xl shadow-lg border border-gray-700/80 group hover:bg-blue-800/20 hover:border-blue-600/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden relative"
+              className="bg-gray-800/80 p-8 rounded-xl shadow-lg border border-gray-700/80 group  transition-all duration-300 transform hover:-translate-y-2 overflow-hidden relative"
             >
               {/* Background glow effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 to-blue-600/0 group-hover:from-blue-600/10 group-hover:to-blue-900/20 transition-all duration-300"></div>
+              <div className="absolute inset-0  transition-all duration-300"></div>
 
               <div className="relative z-10">
                 <div className="mb-6 bg-blue-900/30 p-4 rounded-full group-hover:bg-blue-800/50 transition-colors duration-300 transform group-hover:scale-110">
@@ -180,13 +186,13 @@ function Home() {
             <img src={logoImage} alt="Your Logo" className="" />
           </div>
           <div className="md:w-3/5">
-            <span className="bg-blue-900/30 text-blue-400 text-sm font-medium px-3 py-1 rounded-full mb-6 inline-block">
+            <span className="bg-blue-900/30 text-blue-600 text-sm font-medium px-3 py-1 rounded-full mb-6 inline-block">
               Stay Protected
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Protecting you from the dangers of cyberspace
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-6">
+            Uncover. Secure. Fortify – Because Every Vulnerability Matters
             </h2>
-            <p className="text-gray-300 mb-8">
+            <p className="text-gray-800 mb-8 font-bold">
               In today's interconnected world, cyber threats are constantly
               evolving. Armor-Guardian's comprehensive security solutions are
               designed to protect your business from all types of digital
@@ -201,8 +207,8 @@ function Home() {
                 "Data Breach Protection",
               ].map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-200">{item}</span>
+                  <Check className="w-5 h-5 text-blue-600" />
+                  <span className="text-gray-800 font-bold">{item}</span>
                 </div>
               ))}
             </div>
@@ -210,7 +216,7 @@ function Home() {
             <div className="flex gap-4">
               <Link
                 to="/services"
-                className="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 text-center"
+                className="bg-gray-800 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 text-center"
               >
                 Learn More
               </Link>
@@ -220,7 +226,7 @@ function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-blue-900/30 backdrop-blur-lg border-y border-blue-900/50">
+      {/* <section className="py-16 bg-blue-900/30 backdrop-blur-lg border-y border-blue-900/50">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
@@ -241,10 +247,10 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Trust Section */}
-      <section className="py-16 bg-gray-900">
+      {/* <section className="py-16 bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12">
             <span className="bg-blue-900/30 text-blue-400 text-sm font-medium px-3 py-1 rounded-full mb-6 inline-block">
@@ -267,7 +273,7 @@ function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section
@@ -279,11 +285,10 @@ function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Secure your data, secure your future.
+           Protect Your Data, Shield Your Future.
           </h2>
           <p className="text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Don't wait until after a breach. Protect your business with
-            Armor-Guardian's comprehensive cybersecurity solutions.
+          At Armor Guardian, We Keep You One Step Ahead – Secure Before the Threat Strikes!"
           </p>
           <Link
             to="/contact"
@@ -294,15 +299,13 @@ function Home() {
         </div>
       </section>
 
-      <section className="simran"></section>
-
       {/* Testimonial Section */}
       <section className="py-20 px-4 md:px-8 max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <span className="bg-blue-900/30 text-blue-400 text-sm font-medium px-3 py-1 rounded-full mb-6 inline-block">
+          <span className="bg-blue-900/30 text-blue-600 text-sm font-medium px-3 py-1 rounded-full mb-6 inline-block">
             Client Success
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">
             What Our Clients Say
           </h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto mb-6"></div>
@@ -319,10 +322,7 @@ function Home() {
 
             <div className="max-w-3xl mx-auto">
               <blockquote className="text-xl text-gray-300 text-center mb-8 leading-relaxed">
-                "Armor-Guardian's cybersecurity team identified vulnerabilities
-                we never knew existed. Since implementing their solutions, we've
-                blocked over 200 potential security incidents. The peace of mind
-                is invaluable."
+              Armor-Guardian's expertise in cybersecurity has been a game-changer for our organization. Their proactive approach helped us uncover and mitigate vulnerabilities before they could be exploited. Since partnering with them, we've significantly strengthened our defenses and have seen a drastic reduction in security threats. Their dedication to keeping us secure gives us the confidence to focus on growing our business without fear of cyber risks.
               </blockquote>
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 bg-gray-700 rounded-full mr-4 overflow-hidden border border-gray-600">

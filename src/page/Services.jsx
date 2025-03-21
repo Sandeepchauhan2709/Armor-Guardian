@@ -6,50 +6,50 @@ const Services = () => {
       id: 1,
       icon: "shield-check",
       title: "Cyber Security Audit",
-      description: "We analyze the state of the organization's digital infrastructure in the consideration of the system environment, evaluate existing controls, and provide recommendations."
+      description: "🔍 Assess. Secure. Fortify. We evaluate your organization's digital infrastructure to uncover vulnerabilities, assess controls, and provide ironclad security recommendations."
     },
     {
       id: 2,
       icon: "search",
       title: "Vulnerability Assessment, Penetration Tests, & Risk Assessment",
-      description: "We identify, evaluate, and prioritize the information security risk levels and gaps that negatively impact your business operations. We provide strategic security solutions."
+      description: "🛡️ Expose Weaknesses Before Hackers Do. Identify, evaluate, and prioritize risks to safeguard your business against cyber threats with our strategic security solutions."
     },
     {
       id: 3,
       icon: "academic-cap",
       title: "Cyber Security Training",
-      description: "We conduct cyber security awareness workshops for organizations. Workplace security policies create compliance-focused corporate culture and security-conscious employees."
+      description: "🎓 Empower Your Team, Defend Your Business. Equip your workforce with the knowledge and skills to recognize and mitigate cyber threats through expert-led training."
     },
     {
       id: 4,
       icon: "search-circle",
       title: "Cyber Forensics",
-      description: "We help government agencies and private entities in the correct usage of cyber forensics to solve serious business cases."
+      description: "🔎 Track, Trace, Terminate Threats. We assist organizations in uncovering cyber incidents, analyzing attacks, and delivering actionable forensic insights."
     },
-    {
-      id: 5,
-      icon: "code",
-      title: "CIGW Testing",
-      description: "We identify, analyze, and evaluate the information security risk levels and guide the organization to determine the required level of risk to establish this by utilizing a highly qualified team."
-    },
+    // {
+    //   id: 5,
+    //   icon: "code",
+    //   title: "CIGW Testing",
+    //   description: "We identify, analyze, and evaluate the information security risk levels and guide the organization to determine the required level of risk to establish this by utilizing a highly qualified team."
+    // },
     {
       id: 6,
       icon: "key",
       title: "Encryption Key Management",
-      description: "Our Key Management is suitable for the successful implementation of encryption in the Cloud. Our experts help you establish better encryption key management including secure key generation, secure exchange, secure key distribution, rotation, and destruction of encryption keys."
+      description: "💻 Our Key Management is suitable for the successful implementation of encryption in the Cloud. Our experts help you establish better encryption key management including secure key generation, secure exchange, secure key distribution, rotation, and destruction of encryption keys."
     },
-    {
-      id: 7,
-      icon: "cloud",
-      title: "Cloud Encryption Solutions",
-      description: "We provide customized encryption solutions that are a perfect option for the cloud environment. We provide consulting on developing the implementation and strategy."
-    },
-    {
-      id: 8,
-      icon: "lock-closed",
-      title: "Penetration Testing",
-      description: "A practical demonstration of possible attack scenarios performed with a simulated attack strategy, aiming to discover and exploit security vulnerabilities of your important systems."
-    }
+    // {
+    //   id: 7,
+    //   icon: "cloud",
+    //   title: "Cloud Encryption Solutions",
+    //   description: "We provide customized encryption solutions that are a perfect option for the cloud environment. We provide consulting on developing the implementation and strategy."
+    // },
+    // {
+    //   id: 8,
+    //   icon: "lock-closed",
+    //   title: "Penetration Testing",
+    //   description: "A practical demonstration of possible attack scenarios performed with a simulated attack strategy, aiming to discover and exploit security vulnerabilities of your important systems."
+    // }
   ];
 
   // Function to render icon based on icon name
@@ -115,7 +115,8 @@ const Services = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900 text-white">
+    // <div className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900 text-white">
+    <div className="min-h-screen bg-gray-200 text-white">
       {/* Header Banner */}
       <div className="relative w-full py-12 bg-blue-900 shadow-lg mb-16">
         <div className="absolute inset-0 opacity-20">
@@ -138,11 +139,11 @@ const Services = () => {
                 </div>
                 <p className="text-blue-100 mb-6">{service.description}</p>
               </div>
-              <div className="px-6 pb-6">
+              {/* <div className="px-6 pb-6">
                 <button className="px-4 py-2 bg-yellow-500 text-blue-900 font-semibold text-sm hover:bg-yellow-400 transition-colors duration-300 rounded">
                   LEARN MORE
                 </button>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
