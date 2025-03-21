@@ -2,7 +2,8 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900 text-white">
+    // <div className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900 text-white">
+    <div className="min-h-screen bg-gray-200 text-white">
       {/* Header Banner */}
       <div className="relative w-full py-12 bg-blue-900 shadow-lg mb-16">
         <div className="absolute inset-0 opacity-20">
@@ -109,11 +110,11 @@ const Contact = () => {
                 <div className="flex items-center mb-4">
                   <div className="g-recaptcha" data-sitekey="your-recaptcha-site-key">
                     {/* This is a placeholder for the reCAPTCHA */}
-                    <div className="flex items-center bg-white text-gray-700 p-2 rounded w-fit text-sm">
+                    {/* <div className="flex items-center bg-white text-gray-700 p-2 rounded w-fit text-sm">
                       <input type="checkbox" className="mr-2" />
                       <span>I'm not a robot</span>
                       <img src="/api/placeholder/40/40" alt="reCAPTCHA" className="ml-2 h-10" />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 

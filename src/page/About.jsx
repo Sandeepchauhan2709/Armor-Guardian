@@ -1,4 +1,8 @@
 import React from 'react';
+import image from "../assets/bgimg2.jpg"
+// import visionimage from "../assets/vision.jpg"
+import missionimage from "../assets/cyber-background2.jpg"
+import visionimage from "../assets/cyber-background3.jpg"
 
 const About = () => {
   return (
@@ -22,7 +26,8 @@ const About = () => {
               and Private sector Enterprises, we make sure that our clients have a 
               robust system to combat the rising risk of cyber crimes.
             </p>
-            <div className="space-y-3">
+
+            {/* <div className="space-y-3">
               <div className="flex items-center">
                 <div className="bg-blue-600 rounded-full p-1 mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -39,51 +44,35 @@ const About = () => {
                 </div>
                 <p className="font-medium">STQC Empanelled Test Lab (SETL)</p>
               </div>
-            </div>
+            </div> */}
+
           </div>
           <div className="flex justify-center">
-            <img src="/api/placeholder/500/400" alt="Cybersecurity Expert" className="rounded-lg shadow-xl w-full max-w-md object-cover" />
+            <img src={image} alt="Cybersecurity Expert" className="rounded-lg shadow-xl w-full max-w-md object-cover" />
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          <div className="bg-blue-800 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
-            <div className="text-4xl font-bold text-blue-300 mb-2">55K+</div>
-            <div className="text-xl">Products Secured</div>
-          </div>
-          <div className="bg-blue-800 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
-            <div className="text-4xl font-bold text-blue-300 mb-2">500+</div>
-            <div className="text-xl">Clients</div>
-          </div>
-          <div className="bg-blue-800 rounded-xl p-6 shadow-lg transform hover:scale-105 transition-transform">
-            <div className="text-4xl font-bold text-blue-300 mb-2">100%</div>
-            <div className="text-xl">Effective Shielding</div>
-          </div>
-        </div>
 
         {/* Vision & Mission */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="bg-blue-800/50 rounded-xl overflow-hidden">
-            <div className="h-48 overflow-hidden">
-              <img src="/api/placeholder/600/300" alt="Our Vision" className="w-full object-cover" />
+            <div className="h-90 overflow-hidden">
+              <img src={missionimage} alt="Our Vision" className="w-full object-cover" />
             </div>
             <div className="p-6">
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-blue-100">
-                Our vision is to be India's most reliable information-security service provider which provides end-to-end solutions for organizations — across domains — to protect their digital applications and IT infrastructure.
-              </p>
+              At Armor Guardian, our vision is to be the global leader in vulnerability assessment and penetration testing (VAPT) solutions, setting new benchmarks in cybersecurity. We aim to empower businesses with cutting-edge security frameworks, ensuring a robust digital environment free from cyber threats. Our goal is to create a future where organizations operate with confidence, knowing their digital assets are secure.              </p>
             </div>
           </div>
           <div className="bg-blue-800/50 rounded-xl overflow-hidden">
-            <div className="h-48 overflow-hidden">
-              <img src="/api/placeholder/600/300" alt="Our Mission" className="w-full object-cover" />
+            <div className="h-90 overflow-hidden">
+              <img src={visionimage} alt="Our Mission" className="w-full object-cover" />
             </div>
             <div className="p-6">
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
               <p className="text-blue-100">
-                Our Mission is to help organizations — across domains — always remain safe from breaches in their digital infrastructure by cyber-intruders.
-              </p>
+              Our mission is to provide comprehensive, proactive, and tailored VAPT solutions to businesses across all industries. We strive to identify and eliminate vulnerabilities before they can be exploited, ensuring our clients stay ahead of cybercriminals. By leveraging advanced security methodologies and innovative technology, we help organizations strengthen their defenses, maintain compliance, and achieve complete digital resilience.              </p>
             </div>
           </div>
         </div>
