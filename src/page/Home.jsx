@@ -11,6 +11,8 @@ import {
   Check,
   User,
   Quote,
+  Box,
+  Clock,
 } from "lucide-react";
 
 function Home() {
@@ -102,7 +104,7 @@ function Home() {
                 <span className="absolute bottom-0 left-0 w-full h-2 bg-blue-700/30 -z-10 transform -rotate-1"></span>
               </span> */}
               <br />
-               Neither Do We
+              Neither Do We
             </h1>
             <p className="text-lg text-white mb-8 leading-relaxed backdrop-blur-sm bg-black/20 p-4 rounded-lg">
               Armor-Guardian delivers innovative cybersecurity solutions that
@@ -133,24 +135,21 @@ function Home() {
           {[
             {
               title: "Threat Protection",
-              description:
-               `Stay One Step Ahead – Detect and Neutralize Threats Before They Strike.
+              description: `Stay One Step Ahead – Detect and Neutralize Threats Before They Strike.
                 Proactive Defense, Unmatched Security.
                 Eliminating Cyber Threats Before They Disrupt Your Business.`,
               icon: <Shield className="w-10 h-10 text-blue-400" />,
             },
             {
               title: "24/7 Monitoring",
-              description:
-                `Around-the-Clock Protection – Because Cyber Threats Never Sleep.
+              description: `Around-the-Clock Protection – Because Cyber Threats Never Sleep.
                  Real-Time Threat Detection, 24/7 Peace of Mind.         
                  We Watch, So You Don’t Have To.`,
               icon: <ShieldCheck className="w-10 h-10 text-blue-400" />,
             },
             {
               title: "Network & Data Protection",
-              description:
-                `Fortifying Your Digital Perimeter – Secure, Resilient, Unbreakable.
+              description: `Fortifying Your Digital Perimeter – Secure, Resilient, Unbreakable.
                  Multi-Layered Security for Ultimate Data Protection.
                  Your Data, Our Priority – Because Every Bit Matters.`,
               icon: <Fingerprint className="w-10 h-10 text-blue-400" />,
@@ -170,12 +169,107 @@ function Home() {
                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors duration-300">
                   {feature.title}
                 </h3>
-                <p className="text-gray-300 group-hover:text-gray-100 transition-colors duration-300">
+                <p className="text-black group-hover:text-gray-100 transition-colors duration-300">
                   {feature.description}
                 </p>
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* About Section - Updated */}
+      <section className="about py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            {/* Left side with image */}
+            <div className="md:w-2/5 relative">
+              <div className="rounded-lg overflow-hidden shadow-xl relative">
+                <img
+                  src="src/assets/bgimg.jpg"
+                  alt="Professional cybersecurity team"
+                  className="w-full h-96 object-cover"
+                />
+                <div className="absolute bottom-0 left-0 bg-blue-600 text-white py-3 px-6 rounded-tr-lg">
+                  <span className="text-md font-bold">Armor Guardian</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right side with content */}
+            <div className="md:w-3/5">
+              <div className="mb-6">
+                <span className="text-blue-600 text-sm font-medium">
+                  About Our Company
+                </span>
+                <h2 className="text-3xl font-bold text-gray-800 mt-2">
+                  We Provide Best Cybersecurity <br />
+                  Solutions for Any Purpose
+                </h2>
+                <p className="text-gray-600 mt-4">
+                  At Armor Guardian, our vision is to be the global leader in
+                  vulnerability assessment and penetration testing (VAPT)
+                  solutions, setting new benchmarks in cybersecurity. We aim to
+                  empower businesses with cutting-edge security frameworks,
+                  ensuring a robust digital environment free from cyber threats.
+                  Our goal is to create a future where organizations operate
+                  with confidence, knowing their digital assets are secure.
+                </p>
+                <p className="text-gray-600 mt-4">
+                  Our mission is to provide comprehensive, proactive, and
+                  tailored VAPT solutions to businesses across all industries.
+                  We strive to identify and eliminate vulnerabilities before
+                  they can be exploited, ensuring our clients stay ahead of
+                  cybercriminals. By leveraging advanced security methodologies
+                  and innovative technology, we help organizations strengthen
+                  their defenses, maintain compliance, and achieve complete
+                  digital resilience.
+                </p>
+              </div>
+
+              {/* Feature boxes in grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div className="flex items-start bg-gray-50 p-4 rounded-lg border-l-4 border-blue-600">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Box size={20} className="text-blue-600" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      Threat Protection
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Proactive defense systems that identify and neutralize
+                      threats before they reach your network.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start bg-gray-50 p-4 rounded-lg border-l-4 border-blue-600">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Clock size={20} className="text-blue-600" />
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      24/7 Monitoring
+                    </h3>
+                    <p className="text-gray-600 text-sm mt-1">
+                      Round-the-clock security monitoring and rapid response to
+                      potential security incidents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <Link
+                  to="/services"
+                  className="bg-blue-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-blue-700  transition duration-300"
+                >
+                  READ MORE
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -190,7 +284,7 @@ function Home() {
               Stay Protected
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-6">
-            Uncover. Secure. Fortify – Because Every Vulnerability Matters
+              Uncover. Secure. Fortify – Because Every Vulnerability Matters
             </h2>
             <p className="text-gray-800 mb-8 font-bold">
               In today's interconnected world, cyber threats are constantly
@@ -224,7 +318,6 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* Stats Section */}
       {/* <section className="py-16 bg-blue-900/30 backdrop-blur-lg border-y border-blue-900/50">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
@@ -248,7 +341,6 @@ function Home() {
           </div>
         </div>
       </section> */}
-
       {/* Trust Section */}
       {/* <section className="py-16 bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
@@ -285,10 +377,11 @@ function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-           Protect Your Data, Shield Your Future.
+            Protect Your Data, Shield Your Future.
           </h2>
           <p className="text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-          At Armor Guardian, We Keep You One Step Ahead – Secure Before the Threat Strikes!"
+            At Armor Guardian, We Keep You One Step Ahead – Secure Before the
+            Threat Strikes!"
           </p>
           <Link
             to="/contact"
@@ -321,8 +414,15 @@ function Home() {
             </div>
 
             <div className="max-w-3xl mx-auto">
-              <blockquote className="text-xl text-gray-300 text-center mb-8 leading-relaxed">
-              Armor-Guardian's expertise in cybersecurity has been a game-changer for our organization. Their proactive approach helped us uncover and mitigate vulnerabilities before they could be exploited. Since partnering with them, we've significantly strengthened our defenses and have seen a drastic reduction in security threats. Their dedication to keeping us secure gives us the confidence to focus on growing our business without fear of cyber risks.
+              <blockquote className="text-xl text-black text-center mb-8 leading-relaxed">
+                Armor-Guardian's expertise in cybersecurity has been a
+                game-changer for our organization. Their proactive approach
+                helped us uncover and mitigate vulnerabilities before they could
+                be exploited. Since partnering with them, we've significantly
+                strengthened our defenses and have seen a drastic reduction in
+                security threats. Their dedication to keeping us secure gives us
+                the confidence to focus on growing our business without fear of
+                cyber risks.
               </blockquote>
               <div className="flex items-center justify-center">
                 <div className="w-16 h-16 bg-gray-700 rounded-full mr-4 overflow-hidden border border-gray-600">
