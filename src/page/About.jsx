@@ -6,7 +6,7 @@ import visionimage from "../assets/cyber-background3.jpg"
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900 text-white">
+    <div className="min-h-screen bg-gray-200 text-white">
       {/* Header Banner */}
       <div className="relative w-full py-12 bg-blue-900 shadow-lg mb-16">
         <div className="absolute inset-0 opacity-20">
@@ -20,8 +20,8 @@ const About = () => {
         {/* Main Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">We Prepare you to face lethal Cyber Threats</h2>
-            <p className="text-blue-100 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-800">We Prepare you to face lethal Cyber Threats</h2>
+            <p className="text-gray-700 font-bold mb-6">
               With the right amount of experience working for a range of Public 
               and Private sector Enterprises, we make sure that our clients have a 
               robust system to combat the rising risk of cyber crimes.
@@ -60,8 +60,8 @@ const About = () => {
               <img src={missionimage} alt="Our Vision" className="w-full object-cover" />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-blue-100">
+              <h3 className="text-2xl font-bold mb-4 text-blue-800">Our Vision</h3>
+              <p className="text-white">
               At Armor Guardian, our vision is to be the global leader in vulnerability assessment and penetration testing (VAPT) solutions, setting new benchmarks in cybersecurity. We aim to empower businesses with cutting-edge security frameworks, ensuring a robust digital environment free from cyber threats. Our goal is to create a future where organizations operate with confidence, knowing their digital assets are secure.              </p>
             </div>
           </div>
@@ -70,8 +70,8 @@ const About = () => {
               <img src={visionimage} alt="Our Mission" className="w-full object-cover" />
             </div>
             <div className="p-6">
-              <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <p className="text-blue-100">
+              <h3 className="text-2xl font-bold mb-4 text-blue-800">Our Mission</h3>
+              <p className="text-white">
               Our mission is to provide comprehensive, proactive, and tailored VAPT solutions to businesses across all industries. We strive to identify and eliminate vulnerabilities before they can be exploited, ensuring our clients stay ahead of cybercriminals. By leveraging advanced security methodologies and innovative technology, we help organizations strengthen their defenses, maintain compliance, and achieve complete digital resilience.              </p>
             </div>
           </div>

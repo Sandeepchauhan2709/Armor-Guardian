@@ -129,7 +129,7 @@ const Services = () => {
       <div className="container mx-auto px-4 pb-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="bg-blue-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+            <div key={service.id} className="bg-blue-600 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
               <div className="p-6 flex-grow">
                 <div className="flex items-center mb-4">
                   <div className="rounded-lg p-2 mr-4 bg-blue-900">
@@ -137,7 +137,7 @@ const Services = () => {
                   </div>
                   <h3 className="text-xl font-bold">{service.title}</h3>
                 </div>
-                <p className="text-blue-100 mb-6">{service.description}</p>
+                <p className="text-white mb-6">{service.description}</p>
               </div>
               {/* <div className="px-6 pb-6">
                 <button className="px-4 py-2 bg-yellow-500 text-blue-900 font-semibold text-sm hover:bg-yellow-400 transition-colors duration-300 rounded">
