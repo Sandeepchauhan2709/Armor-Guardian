@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 function Home() {
-  const [showTooltip, setShowTooltip] = useState(false);
+  // const [showTooltip, setShowTooltip] = useState(false);
   // State for text animation
   const [displayText, setDisplayText] = useState("");
   const fullText = "Digital World";
