@@ -40,7 +40,7 @@ const About = () => {
                 </p>
                 
                 <div className="space-y-4">
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex-shrink-0">
                       <CheckCircle className="h-5 w-5 text-white" />
                     </div>
@@ -51,7 +51,7 @@ const About = () => {
                       <CheckCircle className="h-5 w-5 text-white" />
                     </div>
                     <p className="font-medium text-gray-800">STQC Empanelled Test Lab (SETL)</p>
-                  </div>
+                  </div> */}
                   <div className="flex items-start">
                     <div className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex-shrink-0">
                       <CheckCircle className="h-5 w-5 text-white" />

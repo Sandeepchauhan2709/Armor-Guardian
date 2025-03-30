@@ -5,9 +5,7 @@ import {
   Info,
   Briefcase,
   Mail,
-  Facebook,
-  Twitter,
-  Instagram,
+  Linkedin,
 } from "lucide-react";
 
 const Footer = () => {
@@ -31,7 +29,7 @@ const Footer = () => {
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     </div>
-    <span className="text-gray-300 text-sm">Arjunganj, Lucknow, UP - 226002</span>
+    <span className="text-gray-300 text-sm">Mansarowar Parc, Lal kuan, ghaziabad, UP - 201009</span>
   </div>
 
   <div className="flex items-start md:items-center">
@@ -88,9 +86,7 @@ const Footer = () => {
             </h3>
             <div className="flex justify-center md:justify-start space-x-4">
               {[
-                { href: "#", icon: Facebook },
-                { href: "#", icon: Twitter },
-                { href: "#", icon: Instagram },
+                { href: "https://www.linkedin.com/in/armor-guardian-59470334b/", icon: Linkedin },
               ].map((social, index) => (
                 <a
                   key={index}
