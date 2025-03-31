@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import cyberBg from "../assets/hero.jpg";
 import logoImage from "../assets/cyber-background2.jpg"; // adjust path if needed
 import bgimg from "../assets/bgimg3.jpg";
+import bgaboutimg from "../assets/bgimg.jpg";
 
 import {
   Shield,
@@ -178,7 +179,7 @@ function Home() {
             <div className="md:w-2/5 relative">
               <div className="rounded-lg overflow-hidden shadow-xl relative">
                 <img
-                  src="src/assets/bgimg.jpg"
+                  src={bgaboutimg}
                   alt="Professional cybersecurity team"
                   className="w-full h-132 object-cover"
                 />
