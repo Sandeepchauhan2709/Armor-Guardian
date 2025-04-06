@@ -1,12 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { 
   ShieldCheck, 
   Search, 
   GraduationCap, 
   Fingerprint,
   Key,
-  Lock,
-  ArrowRight
+  Lock
 } from 'lucide-react';
 
 const Services = () => {
@@ -54,6 +54,8 @@ const Services = () => {
       accent: "from-blue-600 to-blue-800"
     },
   ];
+
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200">
@@ -142,13 +144,13 @@ const Services = () => {
                 </p>
                 <div className="flex space-x-4">
                   <a 
-                    href="/contact" 
+                   onClick={()=>navigate('/contact')}
                     className="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-blue-50 transition-colors"
                   >
                     Contact Us
                   </a>
                   <a 
-                    href="/about" 
+                     onClick={() => navigate('/about')}  
                     className="bg-transparent border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
                   >
                     Learn More
