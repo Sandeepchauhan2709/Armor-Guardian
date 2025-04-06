@@ -10,8 +10,6 @@ import {
   ShieldCheck,
   Fingerprint,
   Check,
-  User,
-  Quote,
   Box,
   Clock,
 } from "lucide-react";

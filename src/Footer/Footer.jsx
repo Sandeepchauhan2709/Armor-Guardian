@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import logoImage from "../assets/logo3.jpeg";
 import {
   Home,
@@ -9,6 +10,8 @@ import {
 } from "lucide-react";
 
 const Footer = () => {
+
+  const navigate = useNavigate();
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -61,19 +64,19 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               {[
-                { href: "/", icon: Home, text: "Home" },
-                { href: "/about", icon: Info, text: "About" },
-                { href: "/services", icon: Briefcase, text: "Services" },
-                { href: "/contact", icon: Mail, text: "Contact" },
+                { path: "/", icon: Home, text: "Home" },
+                { path: "/about", icon: Info, text: "About" },
+                { path: "/services", icon: Briefcase, text: "Services" },
+                { path: "/contact", icon: Mail, text: "Contact" },
               ].map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                <button
+                    onClick={() => navigate(link.path)}
                     className="flex items-center justify-center md:justify-start text-gray-300 hover:text-blue-300 transition"
                   >
                     <link.icon className="h-4 w-4 mr-2" />
                     {link.text}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
