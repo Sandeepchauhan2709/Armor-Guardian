@@ -71,8 +71,11 @@ const Footer = () => {
               ].map((link, index) => (
                 <li key={index}>
                 <button
-                    onClick={() => navigate(link.path)}
-                    className="flex items-center justify-center md:justify-start text-gray-300 hover:text-blue-300 transition"
+                    onClick={() =>{ navigate(link.path);
+                      window.scrollTo(0, 0);
+                    }
+                    }
+                    className="flex items-center justify-center md:justify-start text-gray-300 hover:text-blue-300 transition focus:outline-none"
                   >
                     <link.icon className="h-4 w-4 mr-2" />
                     {link.text}
